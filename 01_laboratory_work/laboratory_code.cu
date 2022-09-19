@@ -9,7 +9,7 @@ __global__ void kernel (float * data)
 }
 
 // - allocate a private thread to each array element (total N)
-// - this private threads calculate required values
+// - these private threads calculate required values
 // - each thread has unique id
 
 int main (int argc, char * argv[])
