@@ -3,7 +3,7 @@
 
 __global__ void kernel (float * data)
 {
-    int idx = blockIdx.x * blockDim.x + threadIdx.x; // current thread number
+    int idx = blockIdx.x * blockDim.x + threadIdx.x; // global thread index
     float x = 2.0f * 3.1415926f * (float) idx / (float) N; // argument value
     data[idx] = sinf(sqrtf(x)); // find a value and write it down to an array
 }
